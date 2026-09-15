@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "tailwindcss": "^4.3.3",
+    "@tailwindcss/postcss": "^4.3.3"
+  },
+  "scripts": {
+    "watch": "npx @tailwindcss/cli -i ./resources/css/styles.css -o ./resources/css/output.css --watch"
+  }
+}

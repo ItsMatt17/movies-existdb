@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="movie-preview.xsl" type="text/xsl"?>
+<movie>
+    <title>Minions</title>
+    <revenue>20000000</revenue>
+    <rating>4.5</rating>
+    <age_rating>PG</age_rating>
+    <release>
+      <month>3</month>
+      <day>3</day>
+      <year>2025</year>
+    </release>
+    <duration>125</duration>
+    <description>This is a description of a movie</description>
+    <cast>
+        <actor>Actor 2</actor>
+        <actor>Actor 3</actor>
+        <actor>Actor 4</actor>
+    </cast>
+</movie>

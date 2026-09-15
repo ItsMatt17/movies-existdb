@@ -1,0 +1,12 @@
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="slot">
+  <div class="flex-1 flex items-center justify-center bg-slate-400">
+    <div class="bg-slate-50">
+      <form action="index.html" method="GET">
+        <input type="text" placeholder="Search for a title..." name="query"/>
+        <input type="submit" value="Search"/> 
+      </form>
+      <div data-template="app:query"/>
+    </div>
+
+  </div>
+</div>
