@@ -36,16 +36,16 @@ declare %private function app:movie-preview($uri as xs:string){
     return 
       <div class="flex p-4 bg-slate-50 gap-x-4">
         <div class="flex-col">
-          <h3 class="font-bold">{$movie//title/text()}</h3>
+          <a href="/movie">
+            <h3 class="font-bold">{$movie//title/text()}</h3>
+          </a>
           <div class="flex gap-x-4">
             <span>{$movie//release/year/text()}</span>
             <span>{$movie//duration/text()}m</span>
             <span>{$movie//age_rating/text()}</span>
           </div>
         </div>
-
       </div>
-  
 };
 
 declare %private function app:helper-query($node as node(), $model as map(*), $query as xs:string?) {

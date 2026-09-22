@@ -43,9 +43,15 @@ if ($exist:path eq '') then
         <error-handler>
           <forward url="{$exist:controller}/error-page.html" method="get"/>
       	  <forward url="{$exist:controller}/modules/view.xq"/>
-      	</error-handler>
+        </error-handler>
     </dispatch>)
-    else
+    else if (contains($exist:path, "/resources/")) then
+        <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+            <forward url="{$exist:controller}/resources/{substring-after($exist:path, '/resources/')}">
+                <set-header name="Cache-Control" value="max-age=3600, must-revalidate"/>
+            </forward>
+        </dispatch>
+    else 
           (: everything else is passed through :)
           <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
               <cache-control cache="yes"/>

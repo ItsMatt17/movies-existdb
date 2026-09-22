@@ -17,6 +17,8 @@ import module namespace lib="http://exist-db.org/xquery/html-templating/lib";
 
 import module namespace config="http://exist-db.org/apps/movies/config" at "config.xqm";
 import module namespace app="http://exist-db.org/apps/movies/templates" at "app.xqm";
+import module namespace movie="http://exist-db.org/apps/movies/movie" at "../pages/movie/movie.xqm";
+
 
 
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
