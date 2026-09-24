@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movie>
+    <title>Meet The Fockers</title>
+    <genres>
+      <genre>Comedy</genre>
+      <genre>Romance</genre>
+    </genres>
+    <revenue> 522,657,936 </revenue>
+    <rating>6.4</rating>
+    <age_rating>PG-13</age_rating>
+    <release>
+      <month>12</month>
+      <day>22</day>
+      <year>2004</year>
+    </release>
+    <duration>115</duration>
+    <description> All hell breaks loose when the Byrnes family meets the Focker family for the first time. </description> 
+    <cast>
+        <actor>Ben Stiller</actor>
+        <actor>Robert De Niro</actor>
+        <actor>Blythe Danners</actor>
+    </cast>
+</movie>

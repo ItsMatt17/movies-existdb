@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movie>
     <title>Sinners</title>
-    <revenue>20000000</revenue>
-    <rating>4.5</rating>
+    <revenue>231,568,759</revenue>
+    <rating>7.5</rating>
     <age_rating>R</age_rating>
+    <genres>
+      <genre>Horror</genre>
+    </genres>
     <release>
-      <month>3</month>
-      <day>3</day>
+      <month>4</month>
+      <day>18</day>
       <year>2025</year>
     </release>
-    <duration>125</duration>
-    <description>This is a description of a movie</description>
+    <duration>137</duration>
+    <description>
+      Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.
+    </description>
     <cast>
-        <actor>Actor 1</actor>
-        <actor>Actor 2</actor>
-        <actor>Actor 3</actor>
+        <actor>Michael B. Jordan</actor>
+        <actor>Jack O'Connell</actor>
+        <actor>Hailee Steinfeld</actor>
     </cast>
 </movie>

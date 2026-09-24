@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movie>
+    <title>The NeverEnding Story</title>
+    <genres>
+      <genre>Adventure</genre>
+      <genre>Drama</genre>
+      <genre>Fantasy</genre>
+    </genres>
+    <revenue>20,300,086</revenue>
+    <rating>7.3</rating>
+    <age_rating>PG</age_rating>
+    <release>
+      <month>7</month>
+      <day>20</day>
+      <year>1984</year>
+    </release>
+    <duration>102</duration>
+    <description> Bastian finds a magical book in an old bookstore that takes him on an adventure into the land of Fantasia. </description>
+    <cast>
+        <actor>Noah Hathaway</actor>
+        <actor>Barret Oliver</actor>
+        <actor>Tami Stronach</actor>
+    </cast>
+</movie>

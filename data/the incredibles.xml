@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movie>
+  <title>The Incredibles</title>
+  <genres>
+    <genre>Animation</genre>
+    <genre>Action</genre>
+    <genre>Family</genre>
+  </genres>
+  <revenue>631,688,498</revenue>
+  <rating>8.0</rating>
+  <age_rating>G</age_rating>
+  <release> 
+      <month>11</month>
+      <day>8</day>
+      <year>2004</year>
+  </release>
+  <duration>115</duration>
+  <description>
+    While trying to lead a quiet suburban life, a family of undercover superheroes are forced into action to save the world.
+  </description> 
+  <cast>
+      <actor>Craig T. Nelson</actor>
+      <actor>Samuel L. Jackson</actor>
+      <actor>Holly Hunter</actor>
+  </cast>
+</movie>

@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movie>
     <title>Finding Nemo</title>
-    <revenue>20000000</revenue>
-    <rating>4.5</rating>
+    <genres>
+      <genre>Animation</genre>
+      <genre>Comedy</genre>
+      <genre>Adventure</genre>
+    </genres>
+    <revenue>941,637,960</revenue>
+    <rating>8.2</rating>
     <age_rating>G</age_rating>
     <release>
-      <month>3</month>
-      <day>3</day>
-      <year>2025</year>
+      <month>5</month>
+      <day>30</day>
+      <year>2003</year>
     </release>
-    <duration>125</duration>
-    <description>This is a description of a movie</description>
+    <duration>100</duration>
+    <description>
+      After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.
+    </description>
     <cast>
-        <actor>Actor 4</actor>
-        <actor>Actor 2</actor>
-        <actor>Actor 3</actor>
+        <actor>Albert Brooks</actor>
+        <actor>Ellen DeGeneres</actor>
+        <actor>Alexander Gould</actor>
     </cast>
 </movie>

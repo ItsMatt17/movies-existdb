@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="movie-preview.xsl" type="text/xsl"?>
 <movie>
     <title>Minions</title>
-    <revenue>20000000</revenue>
-    <rating>4.5</rating>
+    <genres>
+      <genre>Animation</genre>
+      <genre>Comedy</genre>
+    </genres>
+    <revenue>953,233,243</revenue>
+    <rating>6.4</rating>
     <age_rating>PG</age_rating>
     <release>
-      <month>3</month>
-      <day>3</day>
-      <year>2025</year>
+      <month>7</month>
+      <day>10</day>
+      <year>2015</year>
     </release>
-    <duration>125</duration>
-    <description>This is a description of a movie</description>
+    <duration>91</duration>
+    <description>
+      Minions Stuart, Kevin, and Bob are recruited by Scarlet Overkill, a supervillain who, alongside her inventor husband Herb, hatches a plot to take over the world. 
+    </description>
     <cast>
-        <actor>Actor 2</actor>
-        <actor>Actor 3</actor>
-        <actor>Actor 4</actor>
+        <actor>Sandra Bullock</actor>
+        <actor>Jon Hamm</actor>
+        <actor>Michael Keaton</actor>
     </cast>
 </movie>
