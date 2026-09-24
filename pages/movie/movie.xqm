@@ -67,8 +67,6 @@ declare function movie:full-view($node as node(), $model as map(*)){
 };
 
 declare %private function movie:helper-query($node as node(), $model as map(*), $query as xs:string?, $on as xs:string?) {
-  if (not($query) or not($on)) then movie:fetch-all-movies($node, $model)
-  else 
     let $collection := collection("/db/apps/movies/data")
     (: need to use contains cannot use ft:query b/c smth weird with indexing idk :)
     let $movies := $collection/movie//*[local-name() = $on][contains(lower-case(string(.)), lower-case($query))]
