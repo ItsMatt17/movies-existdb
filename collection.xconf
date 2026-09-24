@@ -1,5 +1,11 @@
 <collection xmlns="http://exist-db.org/collection-config/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <index>
+    <lucene>
+       <text qname="title"/>
+       <text qname="actor"/>
+       <text match="//movie/*"/>
+       <text qname="genre"/>
+     </lucene>
     <ngram qname="title"/>
     <ngram qname="actor"/>
   </index>
