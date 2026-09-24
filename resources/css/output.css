@@ -14,7 +14,13 @@
     --color-slate-400: oklch(70.4% 0.04 256.788);
     --color-neutral-500: oklch(55.6% 0 none);
     --spacing: 0.25rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --radius-md: 0.375rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -183,8 +189,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .max-w-1\/2 {
+    max-width: calc(1 / 2 * 100%);
+  }
   .flex-1 {
     flex: 1;
+  }
+  .list-disc {
+    list-style-type: disc;
   }
   .flex-col {
     flex-direction: column;
@@ -195,11 +207,19 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
   }
-  .bg-indigo-500 {
-    background-color: var(--color-indigo-500);
+  :where(.space-x-2 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
   }
   .bg-neutral-500 {
     background-color: var(--color-neutral-500);
@@ -213,18 +233,39 @@
   .bg-slate-400 {
     background-color: var(--color-slate-400);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  @media (hover: hover) {
-    .hover\:bg-slate-200:hover {
-      background-color: var(--color-slate-200);
-    }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+}
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -233,6 +274,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-space-x-reverse: 0;
       --tw-font-weight: initial;
     }
   }
